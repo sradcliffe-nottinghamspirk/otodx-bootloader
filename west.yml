@@ -19,7 +19,7 @@ manifest:
 #        - bsp
     - name: otodx-linux-src
       path: l4t/source
-      import: yes
+      import:
         path-prefix: l4t/
 
   self:
