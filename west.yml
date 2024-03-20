@@ -1,0 +1,29 @@
+# West manifest for nVidia Jetson Bootloader 36.2
+
+manifest:
+  defaults:
+    remote: nv-tegra
+    revision: jetson_36.2
+
+  remotes:
+    - name: ns-custom
+      url-base: https://github.com/sradcliffe-nottinghamspirk
+  
+# Uncomment the following line for to skip source
+#  group-filter: [-source]
+
+  projects:
+    - name: otodx-bootloader
+      remote: ns-custom
+      path: l4t
+      groups:
+        - bootloader
+    - name: otodx-linux-src
+      remote: ns-custom
+      path: l4t/source
+      import: yes
+      groups:
+        - source
+
+  self:
+    path: l4t
