@@ -1,4 +1,4 @@
-# West manifest for nVidia Jetson Bootloader 36.2
+# West manifest for nVidia Jetson BSP
 
 manifest:
   defaults:
@@ -13,10 +13,10 @@ manifest:
 #  group-filter: [-source]
 
   projects:
-    - name: otodx-bsp
-      path: l4t
-      groups:
-        - bsp
+#    - name: otodx-bsp
+#      path: l4t
+#      groups:
+#        - bsp
     - name: otodx-linux-src
       path: l4t/source
       import: yes
