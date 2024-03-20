@@ -1,5 +1,5 @@
-# otodx-bootloader
-Customizations to the nVidia Jetson Bootloader for OtoDx.
+# otodx-bsp
+Customizations to the nVidia Jetson BSP/Bootloader for OtoDx.
 
 West is used to manage the multiple git repos needed for Jetson.
 nVidia repos are used by default, but can fork and use
@@ -21,6 +21,6 @@ For more information on west and its manifests, visit
 
 `cd project_folder`
 
-`west init -m git@github.com:sradcliffe-nottinghamspirk/otodx-bootloader`
+`west init -m git@github.com:sradcliffe-nottinghamspirk/otodx-bsp`
 
 `west update`
