@@ -2,7 +2,7 @@
 
 manifest:
   defaults:
-    remote: nv-tegra
+    remote: ns-custom
     revision: jetson_36.2
 
   remotes:
@@ -13,13 +13,11 @@ manifest:
 #  group-filter: [-source]
 
   projects:
-    - name: otodx-bootloader
-      remote: ns-custom
+    - name: otodx-bsp
       path: l4t
       groups:
-        - bootloader
+        - bsp
     - name: otodx-linux-src
-      remote: ns-custom
       path: l4t/source
       import: yes
       groups:
