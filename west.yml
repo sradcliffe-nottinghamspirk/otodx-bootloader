@@ -13,12 +13,8 @@ manifest:
 #  group-filter: [-source]
 
   projects:
-#    - name: otodx-bsp
-#      path: l4t
-#      groups:
-#        - bsp
     - name: otodx-linux-src
-      path: l4t/source
+      path: source
       import:
         path-prefix: l4t/
 
